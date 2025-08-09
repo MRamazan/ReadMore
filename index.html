@@ -19,7 +19,67 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
 }
+/* Quote Section - Basitleştirilmiş */
+.quote-section {
+    padding: 3rem 2rem;
+    background: #2c3e50;
+    text-align: center;
+}
 
+.quote-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ecf0f1;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 1rem;
+    color: #bdc3c7;
+    font-weight: 400;
+}
+
+.quote-marks {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    font-family: Georgia, serif;
+}
+
+.quote-marks.opening {
+    top: -5px;
+    left: -15px;
+}
+
+.quote-marks.closing {
+    bottom: -20px;
+    right: -15px;
+}
+
+@media (max-width: 768px) {
+    .quote-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .quote-text {
+        font-size: 1.3rem;
+    }
+    
+    .quote-author {
+        font-size: 0.9rem;
+    }
+    
+    .quote-marks {
+        font-size: 2rem;
+    }
+}
 /* Sidebar Styles */
 .sidebar {
     position: fixed;
@@ -277,8 +337,12 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     border: 1px solid #3498db;
     transition: all 0.4s ease;
+    display: flex;
     position: relative;
     overflow: hidden;
+    width: 350px;
+    height: 200px;
+ 
 }
 
 .benefit-card::before {
@@ -1068,6 +1132,15 @@ body {
                     However, excessive screen time and constant social media use have shortened attention spans and lowered quality of life. People are less focused, more distracted, and mentally fatigued. Encouraging people to read is a powerful way to reverse this trend. Books promote deep thinking, concentration, and mental well-being—helping individuals disconnect from digital noise and reconnect with meaningful, enriching experiences.
                 </div>
             </section>
+            <!-- Quote Section -->
+<section class="quote-section">
+    <div class="quote-container">
+        <div class="quote-marks opening">"</div>
+        <p class="quote-text">A room without books is like a body without a soul.</p>
+        <p class="quote-author">— Marcus Tullius Cicero</p>
+        <div class="quote-marks closing">"</div>
+    </div>
+</section>
 
             <!-- Reading Crisis with Charts -->
             <section class="section">
@@ -1322,6 +1395,42 @@ body {
                             <div class="video-channel">Bill Gates</div>
                         </div>
                     </div>
+                    <div class="video-card lazy" data-video-id="G1XavFOUz20">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/Urue-zuBYUk/maxresdefault.jpg" alt="Reading Benefits Short" loading="lazy">
+                            <div class="play-button"></div>
+                        </div>
+                        <iframe class="video-embed" data-src="https://www.youtube.com/watch?v=Urue-zuBYUk" title="Reading Benefits Short" allowfullscreen></iframe>
+                        <div class="video-info">
+                            <div class="video-title">David Rubenstein: 30% of people in the US haven't read a book after graduating from college</div>
+                            <div class="video-channel">David Rubenstein</div>
+                        </div>
+                    </div>
+
+                    <div class="video-card lazy" data-video-id="HOXwDWCoqQg">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/HOXwDWCoqQg/hqdefault.jpg" alt="Jordan Peterson on Reading" loading="lazy">
+                            <div class="play-button"></div>
+                        </div>
+                        <iframe class="video-embed" data-src="https://www.youtube.com/embed/HOXwDWCoqQg?autoplay=1&rel=0&modestbranding=1" title="Jordan Peterson on Reading" allowfullscreen></iframe>
+                        <div class="video-info">
+                            <div class="video-title">Jordan Peterson on the importance of Reading and Writing</div>
+                            <div class="video-channel">Jordan Peterson</div>
+                        </div>
+                    </div>
+
+                    <div class="video-card lazy" data-video-id="kAwK2wybE68">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/kAwK2wybE68/maxresdefault.jpg" alt="Elon Musk Reading" loading="lazy">
+                            <div class="play-button"></div>
+                        </div>
+                        <iframe class="video-embed" data-src="https://www.youtube.com/embed/kAwK2wybE68?autoplay=1&rel=0&modestbranding=1" title="Elon Musk Reading" allowfullscreen></iframe>
+                        <div class="video-info">
+                            <div class="video-title">Elon Musk: The Importance of Reading Books</div>
+                            <div class="video-channel">Elon Musk</div>
+                        </div>
+                    </div>
+
 
                     <div class="video-card lazy" data-video-id="G1XavFOUz20">
                         <div class="video-thumbnail">
@@ -1348,17 +1457,7 @@ body {
                         </div>
                     </div>
                     
-                    <div class="video-card lazy" data-video-id="HOXwDWCoqQg">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/HOXwDWCoqQg/hqdefault.jpg" alt="Jordan Peterson on Reading" loading="lazy">
-                            <div class="play-button"></div>
-                        </div>
-                        <iframe class="video-embed" data-src="https://www.youtube.com/embed/HOXwDWCoqQg?autoplay=1&rel=0&modestbranding=1" title="Jordan Peterson on Reading" allowfullscreen></iframe>
-                        <div class="video-info">
-                            <div class="video-title">Jordan Peterson on the importance of Reading and Writing</div>
-                            <div class="video-channel">Jordan Peterson</div>
-                        </div>
-                    </div>
+                    
 
                     <div class="video-card lazy" data-video-id="muuWRKYi09s">
                         <div class="video-thumbnail">
@@ -1371,17 +1470,7 @@ body {
                             <div class="video-channel">TED</div>
                         </div>
                     </div>
-                    <div class="video-card lazy" data-video-id="kAwK2wybE68">
-                        <div class="video-thumbnail">
-                            <img src="https://img.youtube.com/vi/kAwK2wybE68/maxresdefault.jpg" alt="Elon Musk Reading" loading="lazy">
-                            <div class="play-button"></div>
-                        </div>
-                        <iframe class="video-embed" data-src="https://www.youtube.com/embed/kAwK2wybE68?autoplay=1&rel=0&modestbranding=1" title="Elon Musk Reading" allowfullscreen></iframe>
-                        <div class="video-info">
-                            <div class="video-title">Elon Musk: The Importance of Reading Books</div>
-                            <div class="video-channel">Elon Musk</div>
-                        </div>
-                    </div>
+                    
 
                     <div class="video-card lazy" data-video-id="U4BoRsPUwUs">
                         <div class="video-thumbnail">
